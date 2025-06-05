@@ -1,41 +1,41 @@
 var product=[ {
     id:1,
-    img: 'imgs/KK.zip - 2.png',
+    img: 'imgs/kk2.png',
     name:'[Pre-order] Litchi Hikari Club Keychain',
     price: 150,
     description: 'Normal items: ship within 5-7 days,Pre-order items: ship within 10-15 days ',
     type: 'Accessories'
 },{
     id:2,
-    img: 'imgs/KK.zip - 3.png',
+    img: 'imgs/kk3.png',
     name:'[Pre-order] Litchi Hikari Club acrylic carabiner',
     price: 150,
     description: 'Normal items: ship within 5-7 days,Pre-order items: ship within 10-15 days ',
     type: 'Accessories'
 },{
      id:3,
-    img: 'imgs/KK.zip - 4.png',
+    img: 'imgs/kk4.png',
     name:'[Pre-order] Litchi Hikari Club acrylic shaker',
     price: 180,
     description: 'Normal items: ship within 5-7 days,Pre-order items: ship within 10-15 days ',
     type: 'Accessories'
 },{
      id:4,
-    img: 'imgs/KK.zip - 5.png',
+    img: 'imgs/kk5.png',
     name:'[Pre-order] Litchi Hikari Club acrylic shaker',
     price: 180,
     description: 'Normal items: ship within 5-7 days,Pre-order items: ship within 10-15 days ',
     type: 'Accessories'
 },{
      id:5,
-    img: 'imgs/KK.zip - 6.png',
+    img: 'imgs/kk6.png',
     name:'[Pre-order] Litchi Hikari Club acrylic shaker',
     price: 180,
     description: 'Normal items: ship within 5-7 days,Pre-order items: ship within 10-15 days ',
     type: 'Paper goods'
 },{
      id:6,
-    img: 'imgs/KK.zip - 7.png',
+    img: 'imgs/kk7.png',
     name:'[Pre-order] Litchi Hikari Club acrylic shaker',
     price: 180,
     description: 'Normal items: ship within 5-7 days,Pre-order items: ship within 10-15 days ',
