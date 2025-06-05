@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+
+
+<link rel="stylesheet" href="keikokisacafe.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="keikokisacafe.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="./imgs/KK.png" class="logonav">
+            </a>
+             <h1 style="font-size: 36px; ">Keiko Kissa Cafe
+
+             </h1>
+            
+            <div class="nav-profile">
+                <p class="nav-profile-name">cart</p>
+                <div class="nav-profile-cart">
+                    <i class="fas fa-cart-shopping"></i>
+                    <div class="cartcount">5</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <input onkeyup="searchsomthing(this)" type="text" class="sidebar-search" placeholder="Search something..">
+            <a href="#" class="sidebar-items">
+                All
+            </a>
+                        <a onclick="searchproduct('all')" class="sidebar-items">
+                Accesories
+            </a>
+                        <a onclick="searchproduct('Accesories')" class="sidebar-items">
+                Paper goods
+            </a>
+                        <a onclick="searchproduct('Papergoods')" class="sidebar-items">
+                T-shirts
+            </a>
+        </div>
+        <div id="productlist" class="product">
+            
+
+        </div>
+
+    </div>
+    <div id="modalDesc" class="modal" style="display: none;">
+        <div onclick="closeModal()" class="modal-bg"></div>
+        <div class="modal-page">
+            <h3>Detail</h3>
+            <div class="modaldesc-content">
+                <img id="mdd-img" class="modaldesc-img" src="imgs/KK.zip - 2.png">
+                <div class="modaldesc-detail">
+                    <p id="mdd-name" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: larger;">Product Name</p>
+                    <br/>
+                    <p id="mdd-price" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">THB</p>
+                    <br/>
+                    <p id="mdd-desc" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Normal items: ship within 5-7 days <br/>Pre-order items: ship within 10-15 days </p>
+                    <br/>
+                    <div class="btn-control">
+                        <button class="btn">Close</button>
+                        <button class="btn btn-buy">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="modal" style="display: none;">
+        <div class="modal-bg"></div>
+        <div class="modal-page">
+            <h3>My cart</h3>
+            <br/>
+            <div class="cartlist">
+                <div class="cartlist-items">
+                    <div class="cartlist-left">
+                        <img src="">
+                        <div class="cartlist-detail">
+                            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: larger;">Product name</p>
+                            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: larger;">THB</p>
+                        </div>
+                    </div>
+                    <div class="cartlist-right">
+                        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: larger;" class="btnc">-</p>
+                        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: larger;margin:0 20px">1</p>
+                        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: larger;" class="btnc">+</p>
+
+                    </div>
+                
+                </div>
+            </div>
+            <div class="btn-control">
+                    <button class="btn">
+                        Cancel
+                    </button>
+                    <button class="btn btn-buy">
+                        Buy
+                    </button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
